@@ -1,13 +1,144 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
-a {
-  color: orange;
+section {
+  padding: 80px 0;
 }
 
-a:hover {
-  color: black;
+#demo .bigbox .box {
+  width: 200px;
+  height: 200px;
+  background-color: #0e8499;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0b3e9c;
 }
-/*# sourceMappingURL=style.css.map */
+#demo .bigbox .box .minibox {
+  width: 100px;
+  height: 100px;
+  background-color: #0b3e9c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 3s;
+}
+#demo .bigbox .box .minibox:hover {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 770px) {
+  #demo .bigbox {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#demo1 .bigbox .box {
+  width: 150px;
+  height: 80px;
+  border-radius: 6px;
+  background-color: #6e1099;
+  font-size: 18px;
+  padding: 15px 0;
+  color: #ffffff;
+  transition: 2s;
+}
+#demo1 .bigbox .box:hover {
+  cursor: pointer;
+  border: 3px solid #6e1099;
+  background-color: #4d0653;
+}
+@media screen and (max-width: 800px) {
+  #demo1 .bigbox .box {
+    background-color: #2166ce;
+    width: 75px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #demo1 .bigbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  #demo1 .bigbox .box {
+    width: 70px;
+    height: 75px;
+    background-color: #750670;
+  }
+}
+
+#demo2 .box {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #966D49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  transition: 3s;
+}
+#demo2 .box:hover {
+  border-radius: 12px;
+}
+@media screen and (max-width: 800px) {
+  #demo2 .bigbox .box {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #demo2 .bigbox {
+    flex-direction: column;
+  }
+}
+
+#demo3 .box {
+  position: relative;
+}
+#demo3 .box .minibox {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1639aa;
+  color: #ffffff;
+}
+#demo3 .box .selected {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+
+#demo4 .box {
+  position: relative;
+}
+#demo4 .box .minibox {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #17ad30;
+  color: #ffffff;
+}
+#demo4 .box .selected {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}/*# sourceMappingURL=style.css.map */

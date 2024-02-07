@@ -1,0 +1,30 @@
+#demo
+    .bigbox
+        .box
+            width: 200px
+            height: 200px
+            background-color: #0e8499
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 3px solid #0b3e9c
+            .minibox
+                width: 100px
+                height: 100px
+                background-color: #0b3e9c
+                color: #ffffff
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 3s
+                &:hover
+                    width: 150px
+                    height: 150px
+    @media screen and ( max-width:770px  )
+        .bigbox
+            flex-wrap: wrap
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            
+
